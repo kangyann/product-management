@@ -1,0 +1,71 @@
+.container {
+  padding: 0px 48px;
+  max-width: 100%;
+  margin: 4px auto;
+}
+
+.d-flex {
+  display: flex;
+}
+.flex-col {
+  flex-direction: column;
+}
+.justify-center {
+  justify-content: center;
+}
+.items-center {
+  align-items: center;
+}
+.min-h-screen {
+  min-height: 100vh;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.input_group {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  max-width: 100%;
+}
+
+/* Component Input */
+.button {
+  padding: 6px 16px;
+}
+.input {
+  outline: none;
+  padding: 6px 0px 6px 8px;
+}
+
+/* Text */
+.text-lg {
+  font-size: 24px;
+}
+.text-md {
+  font-size: 18px;
+}
+.text-normal {
+  font-size: 16px;
+}
+.text-sm {
+  font-size: 14px;
+}
+.text-xs {
+  font-size: 12px;
+}
+
+.author {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+.author .author__box p {
+  user-select: none;
+  text-align: center;
+  font-size: 12px;
+  color: var(--color-black-025);
+}

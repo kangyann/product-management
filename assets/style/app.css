@@ -1,0 +1,27 @@
+:root {
+  font-family: Inter, sans-serif;
+  font-feature-settings: "liga" 1, "calt" 1; /* fix for Chrome */
+  --color-primary: #f5efe6;
+  --color-secondary: #e8dfca;
+  --color-blue: #8CE4FF;
+  --color-blue-mint: #cbdceb;
+  --color-error: #ffa4a4;
+  --color-success: #b4debd;
+
+  --color-black-05: rgb(0, 0, 0, 0.5);
+  --color-black-025: rgb(0, 0, 0, 0.25);
+  --color-white-025: rgb(255, 255, 255.5);
+  --color-white-025: rgb(255, 255, 255.25);
+}
+@supports (font-variation-settings: normal) {
+  :root {
+    font-family: InterVariable, sans-serif;
+  }
+}
+
+*,
+html {
+  padding: 0;
+  margin: 0;
+  font-family: Inter, sans-serif;
+}

@@ -1,0 +1,7 @@
+# Dev Folder
+.github
+.vscode/
+.idea/
+
+# Enviorement
+.env
