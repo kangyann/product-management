@@ -3,14 +3,6 @@
 class Routes
 {
     private $routes = [];
-    private $connection;
-
-    /** Connection to Database */
-    public function __construct()
-    {
-        // $this->connection = require "app/config/connection.php";
-    }
-
     /** Classify is a function to register routes for url configuration.
      * @param string $path is used for matching between route handler and original url.
      * @param array $handler is a class and method that connects the route with the controller.
@@ -47,6 +39,6 @@ class Routes
         }
 
         // Run Method Class
-        (new $c($this->connection))->$m();
+        (new $c())->$m();
     }
 }
