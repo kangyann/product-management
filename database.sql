@@ -31,7 +31,7 @@ CREATE TABLE `categories` (
   `category_name` varchar(100) NOT NULL,
   `createdAt` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
   `updatedAt` timestamp NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
 
@@ -48,7 +48,7 @@ CREATE TABLE `products` (
   `stock` int DEFAULT '0',
   `category_id` int DEFAULT NULL,
   `status` tinyint(1) DEFAULT '1'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
 
@@ -63,18 +63,7 @@ CREATE TABLE `users` (
   `password` varchar(255) NOT NULL,
   `createdAt` datetime DEFAULT CURRENT_TIMESTAMP,
   `updateAt` datetime DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-
---
--- Dumping data for table `users`
---
-
-INSERT INTO `users` (`id`, `name`, `username`, `password`, `createdAt`, `updateAt`) VALUES
-(1, 'Administrator', 'admin', '$2y$10$tphlQGsube2Gm1WRAtyV4exVwdcJxKw4Yj/samuui5VsOfht6bGNK', '2026-01-05 10:40:47', '2026-01-05 10:47:58'),
-
---
--- Indexes for dumped tables
---
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Indexes for table `categories`

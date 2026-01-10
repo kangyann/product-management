@@ -7,7 +7,7 @@ function env($key, $default = null)
     if ($env === null) {
         $env = [];
 
-        $lines = file(__DIR__ . '/../.env', FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+        $lines = file('.env', FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
         foreach ($lines as $line) {
             if (str_starts_with(trim($line), '#')) continue;
 

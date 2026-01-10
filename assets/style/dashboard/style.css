@@ -1,0 +1,59 @@
+@import "../app.css";
+
+
+#sidebar {
+  flex: 0.15;
+  transition: all ease-in .3s;
+  overflow: hidden;
+  min-width: 256px;
+  width: 0;
+  padding: 16px;
+  border-right: 1px solid var(--color-black-05);
+  box-shadow: 0.1px 0.1px 14px var(--color-black-025);
+  min-height: 100vh;
+}
+
+#sidebar #sidebar_menu {
+  margin: 36px 0 0 0;
+}
+#sidebar #sidebar_menu ul {
+  list-style: none;
+  margin: 12px 0 0 0;
+  padding: 0;
+}
+
+#sidebar #sidebar_menu ul a {
+  text-decoration: none;
+  color: black;
+}
+#sidebar #sidebar_menu ul li {
+  margin: 6px 0 0 0;
+  cursor: pointer;
+  /* background-color: var(--color-blue); */
+  padding: 4px 8px;
+  transition: all 0.1s ease-in;
+}
+
+#sidebar #sidebar_menu #menu_active {
+  border-left: 2px solid var(--color-blue);
+  transform: translateX(10px);
+}
+#sidebar #sidebar_menu ul li:hover {
+  font-weight: 700;
+  transform: translateX(10px);
+  border-left: 2px solid var(--color-blue);
+}
+
+/* Main Layout */
+#mainlayout {
+  flex: 1;
+}
+#mainlayout #header {
+  border-bottom: 1px solid var(--color-black-05);
+  box-shadow: 0.1px 0.1px 14px var(--color-black-025);
+  padding: 16px;
+}
+
+#mainlayout #main {
+  padding: 16px;
+}

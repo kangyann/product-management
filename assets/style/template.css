@@ -1,3 +1,4 @@
+
 .container {
   padding: 0px 48px;
   max-width: 100%;
@@ -7,11 +8,20 @@
 .d-flex {
   display: flex;
 }
+.gap-1 {
+  gap: 1px;
+}
+.gap-2 {
+  gap: 2px;
+}
 .flex-col {
   flex-direction: column;
 }
 .justify-center {
   justify-content: center;
+}
+.justify-between {
+  justify-content: space-between;
 }
 .items-center {
   align-items: center;
@@ -34,8 +44,9 @@
 /* Component Input */
 .button {
   padding: 6px 16px;
+  cursor: pointer;
 }
-.input {
+.input, .select {
   outline: none;
   padding: 6px 0px 6px 8px;
 }
@@ -55,6 +66,12 @@
 }
 .text-xs {
   font-size: 12px;
+}
+.text-error {
+  color: var(--color-error);
+}
+.text-success {
+  color: var(--color-success) !important;
 }
 
 .author {

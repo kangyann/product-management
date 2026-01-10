@@ -3,6 +3,13 @@
 class Routes
 {
     private $routes = [];
+    private $connection;
+
+    /** Connection to Database */
+    public function __construct()
+    {
+        // $this->connection = require "app/config/connection.php";
+    }
 
     /** Classify is a function to register routes for url configuration.
      * @param string $path is used for matching between route handler and original url.
@@ -24,7 +31,7 @@ class Routes
         // Validation if $uri same as $routes
         if (!isset($this->routes[$uri])) {
             http_response_code(404);
-            require_once "views/404.php";
+            require "views/404.php";
             return;
         }
 
@@ -40,6 +47,6 @@ class Routes
         }
 
         // Run Method Class
-        (new $c)->$m();
+        (new $c($this->connection))->$m();
     }
 }

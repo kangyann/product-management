@@ -3,10 +3,10 @@
   font-feature-settings: "liga" 1, "calt" 1; /* fix for Chrome */
   --color-primary: #f5efe6;
   --color-secondary: #e8dfca;
-  --color-blue: #8CE4FF;
+  --color-blue: #8ce4ff;
   --color-blue-mint: #cbdceb;
-  --color-error: #ffa4a4;
-  --color-success: #b4debd;
+  --color-error: #FF5656;
+  --color-success: #B4DEBD;
 
   --color-black-05: rgb(0, 0, 0, 0.5);
   --color-black-025: rgb(0, 0, 0, 0.25);

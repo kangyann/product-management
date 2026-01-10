@@ -24,7 +24,6 @@ body {
   border-radius: 4px;
   transition: all 0.15s ease-in;
   width: 100%;
-  cursor: pointer;
   margin-top: 12px;
   border: 1px solid var(--color-blue-mint);
   color: var(--color-primary);
